@@ -20,6 +20,9 @@ $(document).ready(function(){
     sum = sum + subject_points[4];
     // 「合計点：」(id="sum_indicate")に変数「sum」(合計点)を出力させます。
     $("#sum_indicate").text(sum);
+
+    let average = sum / subject_points.length;
+    $("#average_indicate").text(average);
     // 変数「average」に
     // 平均値を出して代入します。(平均をとりたい数の合計点数(sum) / 全体の個数)
     // ヒント! 全体の個数はlengthメソッドを使って求めます。(lengthメソッド: 文字列の長さや配列の要素数などを取得するメソッド)
