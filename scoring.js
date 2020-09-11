@@ -67,7 +67,7 @@ $(document).ready(function(){
   };
   // 最終的なジャッジのロジックを作ります。
   function judgement(){
-
+    $('#declaration').empty();
     // 変数「achievement」に「get_achievement()の戻り値」を代入します。
     let achievement = get_achievement();
     // 変数「pass_or_failure」に「get_pass_or_failure()の戻り値」を代入します。
@@ -78,7 +78,6 @@ $(document).ready(function(){
   // [国語の点数,英語の点数,数学の点数,理科の点数,社会の点数]のいずれかの点数が変更された際に「function score_indicate()」を発火させる処理です。
   $('#national_language, #english, #mathematics, #science, #society').change(function() {
     score_indicate();
-    $('#declaration').empty();
   });
   // 「ランク」(id="evaluation")ボタンを押したら「get_achievement()」が出力される処理です。
   $('#btn-evaluation').click(function() {
