@@ -91,5 +91,6 @@ $(document).ready(function(){
   });
   // 「最終ジャッジ」(id="btn-declaration")ボタンを押したら「function judgement()」が出力される処理です。
   $('#btn-declaration').click(function() {
+  $('#declaration').append(judgement());
   });
 });
