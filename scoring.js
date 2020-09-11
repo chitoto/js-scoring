@@ -59,6 +59,11 @@ $(document).ready(function(){
     let number = subject_points.length;
     // 変数「judge」に"合格"を代入しておきます。
     let judge = "合格";
+    if( subject_points[0] >= 60 && subject_points[1] >= 60 && subject_points[2] >= 60 && subject_points[3] >= 60 && subject_points[4] >= 60){
+      return "合格"
+    }else {
+      return "不合格";
+    }
     // 入力したそれぞれの教科の点数が60点よりも低いと変数「judge」に"不合格"を再代入して「judge」を返します。
     // ヒント! 「javascript 点数 合格 不合格 ロジック」で検索してみてください。
     return pass_or_failure;
